@@ -1,0 +1,23 @@
+{
+  "name": "readme-generator",
+  "version": "1.0.0",
+  "description": "Creates README file",
+  "main": "index.js",
+  "dependencies": {
+    "inquirer": "^7.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anishasnet/readme-generator.git"
+  },
+  "author": "anishasnet",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anishasnet/readme-generator/issues"
+  },
+  "homepage": "https://github.com/anishasnet/readme-generator#readme"
+}
