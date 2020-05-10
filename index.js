@@ -1,8 +1,6 @@
 const fs = require('fs')
 const inquirer = require('inquirer')
 const generateReadme = require('./src/readme-template.js')
-let title = "generator";
-let user = "anishasnet";
 const questions = () => {
     return inquirer.prompt([
         {
@@ -128,6 +126,6 @@ const questions = () => {
 questions().then(answers => 
     fs.writeFile('./README.md', generateReadme(answers), err => {
         if (err) throw new Error(err);
-        console.log('README.md file created !')
+        console.log('README.md file created!')
     })
 )
