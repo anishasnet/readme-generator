@@ -1,6 +1,8 @@
 const fs = require('fs')
 const inquirer = require('inquirer')
 const generateReadme = require('./src/readme-template.js')
+let title = "generator";
+let user = "anishasnet";
 const questions = () => {
     return inquirer.prompt([
         {
@@ -56,9 +58,10 @@ const questions = () => {
             }
         },
         {
-            type: 'input',
+            type: 'list',
             name: 'license',
             message: 'What kind of license should your project have?',
+            choices: ['MIT', 'APACHE 2.0', 'GPL 3.0', 'BSD 3', 'None'],
             validate: licenseInput => {
                 if (licenseInput) {
                     return true;
@@ -72,6 +75,7 @@ const questions = () => {
             type: 'input',
             name: 'commandDependencies',
             message: 'What command should be run to install dependencies?',
+            default: 'npm i',
             validate: commandDependenciesInput => {
                 if (commandDependenciesInput) {
                     return true;
@@ -85,6 +89,7 @@ const questions = () => {
             type: 'input',
             name: 'commandTests',
             message: 'What command should be run to run tests?',
+            default: 'npm test',
             validate: commandTestsInput => {
                 if (commandTestsInput) {
                     return true;
@@ -126,6 +131,6 @@ const questions = () => {
 questions().then(answers => 
     fs.writeFile('./README.md', generateReadme(answers), err => {
         if (err) throw new Error(err);
-        console.log('README.md file created!')
+        console.log('README.md file created !')
     })
 )
