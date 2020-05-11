@@ -1,8 +1,9 @@
+// Setting constants with the modules that have to be imported.
 const fs = require('fs')
 const inquirer = require('inquirer')
 const generateReadme = require('./src/readme-template.js')
-let title = "generator";
-let user = "anishasnet";
+
+// Function with questions using inquirer module.
 const questions = () => {
     return inquirer.prompt([
         {
@@ -128,6 +129,7 @@ const questions = () => {
     ])
 }
 
+// Calling the function with questions to then write into the file.
 questions().then(answers => 
     fs.writeFile('./README.md', generateReadme(answers), err => {
         if (err) throw new Error(err);
