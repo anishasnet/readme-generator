@@ -1,10 +1,10 @@
 
 # README Generator
-![GitHub License](http://img.shields.io/badge/license-APACHE%202.0-blue)
+![GitHub License](http://img.shields.io/badge/license-MIT-blue)
 
 
 ## Description
-This project generates a README.md file for a user based on the information they provide about their project.
+This project uses inquirer to prompt the user for information regarding a project they want to create a README.md for and then proceeds to generate the README.md file for them with the correct data. For more information visit this link for a walkthrough video: https://drive.google.com/file/d/1SzRuptyOrb40QIqg0NwPLnNUCAl_ySyl/view?usp=sharing
 
 
 
@@ -26,11 +26,11 @@ npm install inquirer
 
 ## Usage
 
-index.js is the file that should be run.
+The index.js file is the file that has to be run.
 
 ## License
 
-This project is under the APACHE 2.0 license.
+This project is under the MIT license.
 
 ## Contributing
 

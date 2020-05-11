@@ -1,5 +1,6 @@
 const generateReadme = (data) => {
-    // Setting the name of the license so that the license name can be used in the url for the badge. Spaces have to be replaced with %20 in a url.
+    // Setting the name of the license so that the license name can be used in the url for the badge.
+    // Spaces have to be replaced with %20 in a url.
     let badgeLicense = data.license.replace(' ', '%20')
     // Setting a new license name so that it makes grammatical sense in a sentence.
     let inSentenceLicense;
