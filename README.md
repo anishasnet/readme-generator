@@ -4,7 +4,9 @@
 
 
 ## Description
-This project uses inquirer to prompt the user for information regarding a project they want to create a README.md for and then proceeds to generate the README.md file for them with the correct data. For more information visit this link for a walkthrough video: https://drive.google.com/file/d/1SzRuptyOrb40QIqg0NwPLnNUCAl_ySyl/view?usp=sharing
+This project uses inquirer to prompt the user for information regarding a project they want to create a README.md for and then proceeds to generate the README.md file for them with the correct data. 
+
+<!-- For more information visit this link for a walkthrough video: https://drive.google.com/file/d/1SzRuptyOrb40QIqg0NwPLnNUCAl_ySyl/view?usp=sharing -->
 
 
 
